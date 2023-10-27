@@ -1,0 +1,38 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-energyinfoswissdev-staging-92720-authRole",
+      "UnauthRoleArn": "arn:aws:iam::142617726795:role/amplify-energyinfoswissdev-staging-92720-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::142617726795:role/amplify-energyinfoswissdev-staging-92720-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-energyinfoswissdev-staging-92720-deployment",
+      "UnauthRoleName": "amplify-energyinfoswissdev-staging-92720-unauthRole",
+      "StackName": "amplify-energyinfoswissdev-staging-92720",
+      "StackId": "arn:aws:cloudformation:eu-central-1:142617726795:stack/amplify-energyinfoswissdev-staging-92720/e4640a30-5c4e-11ee-9389-065a3cae1204",
+      "AmplifyAppId": "d275p8bhezlplb"
+    },
+    "categories": {
+      "auth": {
+        "energyinfoswissa744b2c6a744b2c6": {}
+      }
+    }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-energyinfoswiss-prod-73605-authRole",
+      "UnauthRoleArn": "arn:aws:iam::142617726795:role/amplify-energyinfoswiss-prod-73605-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::142617726795:role/amplify-energyinfoswiss-prod-73605-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-energyinfoswiss-prod-73605-deployment",
+      "UnauthRoleName": "amplify-energyinfoswiss-prod-73605-unauthRole",
+      "StackName": "amplify-energyinfoswiss-prod-73605",
+      "StackId": "arn:aws:cloudformation:eu-central-1:142617726795:stack/amplify-energyinfoswiss-prod-73605/abfb5580-673f-11ee-8af1-062b9ea1dac6",
+      "AmplifyAppId": "d275p8bhezlplb"
+    },
+    "categories": {
+      "auth": {
+        "energyinfoswissa744b2c6a744b2c6": {}
+      }
+    }
+  }
+}

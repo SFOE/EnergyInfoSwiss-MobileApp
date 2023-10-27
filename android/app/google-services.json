@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "583869000132",
+    "project_id": "energyswiss---test",
+    "storage_bucket": "energyswiss---test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583869000132:android:778ac6d0ce58b24cc9dc91",
+        "android_client_info": {
+          "package_name": "ch.bfe.energyinfoswiss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583869000132-e1aq14pa6fl5mh8b870k32hr2kn48mrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGVk74eckISA-CrEAKcBNCV-aUuJKqAJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583869000132-e1aq14pa6fl5mh8b870k32hr2kn48mrd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "583869000132-5kbbqkm5ka5jlj2eaa9jommvvftulpi5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ch.bfe.energyinfoswiss"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

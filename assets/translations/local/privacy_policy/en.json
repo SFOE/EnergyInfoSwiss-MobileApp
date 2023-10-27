@@ -1,0 +1,19 @@
+{
+  "Responsible.text": "Federal Office for Energy\nPulverstrasse 13\n3003 Bern\nmedia@bfe.admin.ch",
+  "Responsible.title": "Responsible",
+  "Types of processed data and purpose of processing.text": "Our application \"EnergyInfoSwiss\" processes exclusively analytical data for the purpose of improving the website and for usage analysis. These include:\n- Usage data (e.g., functions of the app used, frequency of use).\n- Meta/communication data (e.g., device information, IP addresses).\nThis data is processed exclusively in an anonymized form and cannot be used to identify you personally.",
+  "Types of processed data and purpose of processing.title": "Types of processed data and purpose of processing",
+  "Privacy policy for cookies.text": "The \"EnergyInfoSwiss\" uses cookies. These serve to improve the user experience and the performance of the app. You can control the use of cookies in your device settings.",
+  "Privacy policy for cookies.title": "Privacy policy for cookies",
+  "Processing of Personal Data through the Login Feature.text": "With the introduction of our login feature, we process additional personal data to provide you with individualized access to the \"EnergyInfoSwiss\". The collection of this data is voluntary and is solely for the purpose of enhancing your user experience. The data processed through the login feature includes:\n- Email address (for registration and communication).\n- Location and canton (for content personalization).\nYour data is stored in data centers within the European Union and is subject to EU data protection regulations. Your data will not be shared with third parties and is exclusively used for the aforementioned purposes.",
+  "Processing of Personal Data through the Login Feature.title": "Processing of Personal Data through the Login Feature",
+  "Rights of the Data Subjects.text": "As a user of the \"EnergyInfoSwiss\", you have the right to request information about the data we store about you. Furthermore, you can request correction, deletion, or limitation of the processing of your personal data. For all inquiries regarding your data, please contact media@bfe.admin.ch.",
+  "Rights of the Data Subjects.title": "Rights of the Data Subjects",
+  "Legal notice.text": "For further legal information and notices, please visit the official website of the federal government:",
+  "Legal notice.title": "Legal notice",
+  "Changes and updates to the privacy policy.text": "We reserve the right to change or update this privacy policy to adapt it to new technological or legal developments. We therefore recommend that you regularly inform yourself about the content of our privacy policy.",
+  "Changes and updates to the privacy policy.title": "Changes and updates to the privacy policy",
+  "Delete Account.title": "Delete data/account",
+  "Delete Account.text": "To delete your account send an email to media@bfe.admin.ch with the content \"Delete account\" and your registered email address. We will then delete your account (email address and password).",
+  "Last modified.text": "Last modified on 29.09.2023."
+}

@@ -1,0 +1,19 @@
+{
+  "Responsible.text": "Bundesamt für Energie\nPulverstrasse 13\n3003 Bern\nmedia@bfe.admin.ch",
+  "Responsible.title": "Verantwortlicher",
+  "Types of processed data and purpose of processing.text": "Unsere Applikation \"EnergyInfoSwiss\" verarbeitet ausschließlich analytische Daten zum Zweck der Verbesserung der Website und zur Nutzungsanalyse. Dazu gehören:\n- Nutzungsdaten (z.B., verwendete Funktionen der App, Häufigkeit der Nutzung).\n- Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen).\nDiese Daten werden ausschließlich anonymisiert verarbeitet und können nicht dazu verwendet werden, Sie persönlich zu identifizieren.",
+  "Types of processed data and purpose of processing.title": "Arten der verarbeiteten Daten und Zweck der Verarbeitung",
+  "Privacy policy for cookies.text": "Das \"EnergyInfoSwiss\" verwendet Cookies. Diese dienen dazu, das Nutzungserlebnis und die Performance der App zu verbessern. Sie können die Verwendung von Cookies in den Einstellungen Ihres Geräts steuern.",
+  "Privacy policy for cookies.title": "Datenschutzbestimmungen für Cookies",
+  "Processing of Personal Data through the Login Feature.text": "Mit der Einführung unseres Login-Features verarbeiten wir zusätzliche personenbezogene Daten, um Ihnen einen individualisierten Zugang zum \"EnergyInfoSwiss\" zu ermöglichen. Die Erhebung dieser Daten erfolgt auf freiwilliger Basis und dient ausschließlich der Verbesserung Ihres Nutzungserlebnisses. Zu den durch das Login-Feature verarbeiteten Daten gehören:\n- E-Mail-Adresse (zur Anmeldung und Kommunikation).\n- Ort und Kanton (zur Personalisierung von Inhalten).\nIhre Daten werden in Datenzentren innerhalb der Europäischen Union gespeichert und unterliegen den Datenschutzbestimmungen der EU. Ihre Daten werden nicht an Dritte weitergegeben und ausschließlich für die oben genannten Zwecke verwendet.",
+  "Processing of Personal Data through the Login Feature.title": "Verarbeitung von Personendaten durch das Login-Feature",
+  "Rights of the Data Subjects.text": "Als Nutzer des \"EnergyInfoSwisss\" haben Sie das Recht, Auskunft über die von uns über Sie gespeicherten Daten zu verlangen. Darüber hinaus können Sie Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen. Bitte wenden Sie sich für alle Anfragen bezüglich Ihrer Daten an media@bfe.admin.ch.",
+  "Rights of the Data Subjects.title": "Rechte der betroffenen Personen",
+  "Legal notice.text": "Für weitere rechtliche Informationen und Hinweise besuchen Sie bitte die offizielle Webseite des Bundes:",
+  "Legal notice.title": "Rechtliche Hinweise",
+  "Changes and updates to the privacy policy.text": "Wir behalten uns vor, diese Datenschutzerklärung zu ändern oder zu aktualisieren, um sie an neue technologische oder rechtliche Entwicklungen anzupassen. Wir empfehlen Ihnen daher, sich regelmäßig über den Inhalt unserer Datenschutzerklärung zu informieren.",
+  "Changes and updates to the privacy policy.title": "Änderungen und Aktualisierungen der Datenschutzerklärung",
+  "Delete Account.title": "Daten/Konto löschen",
+  "Delete Account.text": "Um Ihr Konto zu löschen senden Sie eine E-Mail an media@bfe.admin.ch mit dem Inhalt \"Konto löschen\" und Ihrer registrierten E-Mail Adresse. Anschliessend wird ihr Konto (E-Mail Adresse und Passwort) von uns gelöscht.",
+  "Last modified.text": "Zuletzt geändert am 29.09.2023."
+}
