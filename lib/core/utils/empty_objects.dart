@@ -10,7 +10,7 @@ class EmptyObjects{
 
   static KeyPerformanceIndex kpi = KeyPerformanceIndex(
     name: '',
-    value: '0',
+    value: null,
     category: KPICategory.energy,
     route: NavigationRoute.overview,
     position: 0

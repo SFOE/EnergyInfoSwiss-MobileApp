@@ -1,29 +1,20 @@
 import 'package:energy_dashboard/core/helpers/api_base_helper.dart';
-import 'package:energy_dashboard/core/mixins/api_repository_mixin.dart';
 import 'package:energy_dashboard/core/types/kpi_category.dart';
 import 'package:energy_dashboard/core/types/navigation_route.dart';
 import 'package:energy_dashboard/core/utils/empty_objects.dart';
 import 'package:energy_dashboard/core/utils/kpi_utils.dart';
 import 'package:energy_dashboard/data/repositories/database_repository.dart';
 import 'package:energy_dashboard/domain/abstractions/api_repository_abstraction.dart';
-import 'package:energy_dashboard/domain/entities/ampel.dart';
 import 'package:energy_dashboard/domain/entities/key_performance_index.dart';
+import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
 /// Repository for API requests
 ///
 /// Contains all necessary api requests
 /// to receive the desired content from the API
-class ApiRepository extends ApiRepositoryAbstraction with ApiRepositoryMixin{
+class ApiRepository extends ApiRepositoryAbstraction {
 
-
-  ///* AMPEL *///
-
-  @override
-  Future<List<Ampel>> getAmpel() async {
-    final response = await GetIt.I.get<ApiBaseHelper>().get('ampel');
-    return AmpelResponse.fromJson(response).results;
-  }
 
   ///* TRANSLATIONS *///
 
@@ -133,7 +124,8 @@ class ApiRepository extends ApiRepositoryAbstraction with ApiRepositoryMixin{
             trendRating: k.trendRating,
             date: k.date,
         ) : null;
-    }).whereType<KeyPerformanceIndex>().toList();
+    }).whereType<KeyPerformanceIndex>().toList()
+      ..sort((a,b) => a.position.compareTo(b.position));
 
     // Create or update KPIs in database
     await GetIt.I.get<DatabaseRepository>().storeKPIs(newKPIs);

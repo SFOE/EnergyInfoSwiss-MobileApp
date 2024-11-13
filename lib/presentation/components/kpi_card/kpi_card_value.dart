@@ -22,8 +22,8 @@ class KpiCardValue extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           AnimatedNumberIncrease(
-            start: double.parse(kpi.value),
-            end: double.parse(kpi.value),
+            start: double.parse(kpi.value ?? '0'),
+            end: double.parse(kpi.value ?? '0'),
             duration: const Duration(seconds: 2),
             isDisabled: kpi.isDisabled,
           ),
@@ -45,8 +45,8 @@ class KpiCardValue extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           AnimatedNumberIncrease(
-            start: double.parse(kpi.value),
-            end: double.parse(kpi.value),
+            start: double.parse(kpi.value  ?? '0'),
+            end: double.parse(kpi.value  ?? '0'),
             isDisabled: kpi.isDisabled,
           ),
           Gaps.vSpacingXXS,

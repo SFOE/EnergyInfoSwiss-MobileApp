@@ -122,7 +122,7 @@ class _KpiCardState extends State<KpiCard> with SingleTickerProviderStateMixin, 
                   children: [
                     KpiCardChart(kpi: widget.kpi),
                     const Spacer(flex: 2),
-                    KpiCardValue(kpi: widget.kpi),
+                    widget.kpi.value != null ? KpiCardValue(kpi: widget.kpi) : Container(),
                   ],
                 ),
               ),

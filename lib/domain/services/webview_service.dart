@@ -83,6 +83,7 @@ class WebviewService extends ChangeNotifier with WebviewMixin{
   void _onUrlChange(UrlChange change){
     debugPrint('[WebView] Url change to ${change.url}');
     cookieManager.clearCookies();
+    controller.clearCache();
   }
   
   void _onPageStarted(String url){

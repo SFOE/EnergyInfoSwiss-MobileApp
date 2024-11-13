@@ -18,7 +18,7 @@ class KeyPerformanceIndexAdapter extends TypeAdapter<KeyPerformanceIndex> {
     };
     return KeyPerformanceIndex(
       name: fields[0] as String,
-      value: fields[1] as String,
+      value: fields[1] as String?,
       trend: fields[2] as Trend?,
       trendRating: fields[3] as TrendRating?,
       date: fields[4] as String?,

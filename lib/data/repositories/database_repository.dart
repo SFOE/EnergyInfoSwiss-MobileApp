@@ -71,7 +71,7 @@ class DatabaseRepository extends DatabaseRepositoryAbstraction{
           date: kpi.date,
           trend: kpi.trend,
           trendRating: kpi.trendRating,
-          value: kpi.value != "null" ? kpi.value : "0"
+          value: kpi.value
         ));
       }
     }

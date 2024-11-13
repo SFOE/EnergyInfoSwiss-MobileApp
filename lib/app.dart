@@ -7,7 +7,6 @@ import 'package:energy_dashboard/presentation/components/animations/stretchy_scr
 import 'package:energy_dashboard/presentation/components/nav_bar/nav_bar.dart';
 import 'package:energy_dashboard/presentation/energy/blocs/energy_kpi_bloc.dart';
 import 'package:energy_dashboard/presentation/gas/blocs/gas_kpi_bloc.dart';
-import 'package:energy_dashboard/presentation/overview/blocs/ampel/ampel_bloc.dart';
 import 'package:energy_dashboard/presentation/overview/blocs/overview_kpi/overview_kpi_bloc.dart';
 import 'package:energy_dashboard/presentation/price/blocs/price_kpi_bloc.dart';
 import 'package:energy_dashboard/presentation/weather/blocs/weather_kpi_bloc.dart';
@@ -26,7 +25,6 @@ class App extends StatelessWidget {
     final String currentLocation = navigationShell.shellRouteContext.routeMatchList.fullPath;
     return MultiProvider(
       providers: [
-        BlocProvider(create: (context) => AmpelBloc()),
         BlocProvider(create: (context) => EnergyKpiBloc()),
         BlocProvider(create: (context) => GasKpiBloc()),
         BlocProvider(create: (context) => PriceKpiBloc()),

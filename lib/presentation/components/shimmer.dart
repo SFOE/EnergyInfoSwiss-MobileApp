@@ -56,7 +56,7 @@ class ShimmerState extends State<Shimmer> with TickerProviderStateMixin {
 
 // ignore: prefer-single-widget-per-file
 class _Shimmer extends SingleChildRenderObjectWidget {
-  const _Shimmer({Widget? child, required this.gradient, required this.percent}) : super(child: child);
+  const _Shimmer({super.child, required this.gradient, required this.percent});
 
   final Gradient gradient;
   final double percent;

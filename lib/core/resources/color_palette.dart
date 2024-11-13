@@ -22,32 +22,6 @@ class ColorPalette{
 
   static const Color dividerColor = Color(0xFFDFE4E9);
 
-  // Ampel colors
-
-  static const Color ampelLevel1Soft = Color(0xFFEAF5EA);
-  static const Color ampelLevel1Medium = Color(0xFF96CC91);
-  static const Color ampelLevel1Hard = Color(0xFF78AA78);
-  static const Color ampelLevel1Tab = Color(0xFF96CC91);
-
-  static const Color ampelLevel2Soft = Color(0xFFFFF1CD);
-  static const Color ampelLevel2Medium = Color(0xFFD8BF3C);
-  static const Color ampelLevel2Hard = Color(0xFFB79A4E);
-  static const Color ampelLevel2Tab = Color(0xFFF1D129);
-
-  static const Color ampelLevel3Soft = Color(0xFFFAE6D5);
-  static const Color ampelLevel3Medium = Color(0xFFEB9F46);
-  static const Color ampelLevel3Hard = Color(0xFFC6863C);
-  static const Color ampelLevel3Tab = Color(0xFFFFA630);
-
-  static const Color ampelLevel4Soft = Color(0xFFFADCD5);
-  static const Color ampelLevel4Medium = Color(0xFFCE5A28);
-  static const Color ampelLevel4Hard = Color(0xFFCE5A28);
-  static const Color ampelLevel4Tab = Color(0xFFED5F22);
-
-  static const Color ampelLevel5Soft = Color(0xFFF7BCB8);
-  static const Color ampelLevel5Medium = Color(0xFFAA2B23);
-  static const Color ampelLevel5Hard = Color(0xFFAA2B23);
-  static const Color ampelLevel5Tab = Color(0xFF7F1610);
 
   // Category icon colors (Energy, Gas, Price, Weather)
   static const Color gasIconColor = Color(0xFF7F0393);

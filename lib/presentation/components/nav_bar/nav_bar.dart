@@ -11,7 +11,7 @@ import 'package:provider/provider.dart';
 
 class NavBar extends StatelessWidget {
   final StatefulNavigationShell navigationShell;
-  const NavBar({Key? key, required this.navigationShell}) : super(key: key);
+  const NavBar({super.key, required this.navigationShell});
 
   
   @override

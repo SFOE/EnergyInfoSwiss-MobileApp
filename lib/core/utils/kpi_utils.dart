@@ -19,7 +19,10 @@ class KPIUtils{
     KeyPerformanceIndex(name: 'aktuellerVerbrauch', value: '161', route: NavigationRoute.overview, category: KPICategory.energy, position: 0),
     KeyPerformanceIndex(name: 'nettoImport', value: '32', route: NavigationRoute.overview, category: KPICategory.gas, position: 1),
     KeyPerformanceIndex(name: 'stromBoerse', value: '81', route: NavigationRoute.overview, category: KPICategory.price, position: 2),
-    KeyPerformanceIndex(name: 'aktuelleTemperatur', value: '20.2', route: NavigationRoute.overview, category: KPICategory.weather, position: 3),
+    KeyPerformanceIndex(name: 'endenergieverbrauch', value: null, route: NavigationRoute.overview, category: KPICategory.energy, position: 3),
+    KeyPerformanceIndex(name: 'produktionPhotovoltaik', value: '0', route: NavigationRoute.overview, category: KPICategory.energy, position: 4),
+    KeyPerformanceIndex(name: 'produktionWinterproduktion', value: '0', route: NavigationRoute.overview, category: KPICategory.energy, position: 5),
+    KeyPerformanceIndex(name: 'aktuelleTemperatur', value: '20.2', route: NavigationRoute.overview, category: KPICategory.weather, position: 6),
   ];
 
   static final List<KeyPerformanceIndex> defaultEnergyKPIs = [
@@ -32,6 +35,9 @@ class KPIUtils{
     //KeyPerformanceIndex(name: 'nettoExport', value: '73', route: NavigationRoute.energy, category: KPICategory.energy, position: 6),  // replaced by nettoImportExport
     KeyPerformanceIndex(name: 'nettoImportExport', value: '-15', route: NavigationRoute.energy, category: KPICategory.energy, position: 5),
     KeyPerformanceIndex(name: 'aktuelleGesamteinsparung', value: '0', route: NavigationRoute.energy, category: KPICategory.energy, position: 6),
+    KeyPerformanceIndex(name: 'endenergieverbrauch', value: null, route: NavigationRoute.energy, category: KPICategory.energy, position: 7),
+    KeyPerformanceIndex(name: 'produktionPhotovoltaik', value: '0', route: NavigationRoute.energy, category: KPICategory.energy, position: 8),
+    KeyPerformanceIndex(name: 'produktionWinterproduktion', value: '0', route: NavigationRoute.energy, category: KPICategory.energy, position: 9),
   ];
   
   static final List<KeyPerformanceIndex> defaultGasKPIs = [
@@ -211,6 +217,13 @@ class KPIUtils{
         return Translations.of(context)!.text('kpi-strom-6_kkw-ch.titel');
       case 'produktionKkwFR':
         return Translations.of(context)!.text('kpi-strom-6_kkw-fr.titel');
+      case 'endenergieverbrauch':
+        return Translations.of(context)!.text('kpi-strom-2_energieverbrauch.titel');
+      case 'produktionPhotovoltaik':
+        return Translations.of(context)!.text('kpi-strom-5_produktion-pv.titel');
+      case 'produktionWinterproduktion':
+        return Translations.of(context)!.text('kpi-strom-5_winterproduktion.titel');
+
       // Gas
       case 'fuellstandNachbarlaender':
         return Translations.of(context)!.text('uebersicht_gas_fuellstand-nachbarlaender.titel');
@@ -290,6 +303,12 @@ class KPIUtils{
         return GetIt.I.get<WebBaseHelper>().getWebUrl(context: context, path: '/strom/kkw-ch');
       case 'produktionKkwFR':
         return GetIt.I.get<WebBaseHelper>().getWebUrl(context: context, path: '/strom/kkw-fr');
+      case 'endenergieverbrauch':
+        return GetIt.I.get<WebBaseHelper>().getWebUrl(context: context, path: '/strom/energieverbrauch');
+      case 'produktionPhotovoltaik':
+        return GetIt.I.get<WebBaseHelper>().getWebUrl(context: context, path: '/strom/produktion-pv');
+      case 'produktionWinterproduktion':
+        return GetIt.I.get<WebBaseHelper>().getWebUrl(context: context, path: '/strom/winterproduktion');
       // Gas
       case 'fuellstandNachbarlaender':
         return GetIt.I.get<WebBaseHelper>().getWebUrl(context: context, path: '/gas/eu-gasspeicher');
@@ -339,6 +358,8 @@ class KPIUtils{
       case 'nettoImportExport':
       case 'produktionKkwCH':
       case 'produktionKkwFR':
+      case 'produktionPhotovoltaik':
+      case 'produktionWinterproduktion':
         return 'GWh';
       case 'speicherfuellstand':
       case 'aktuelleGesamteinsparung':
@@ -384,6 +405,7 @@ class KPIUtils{
       case 'nettoExport': // unused (for energy)
         return 'assets/icons/charts/line-chart.svg';
       case 'nettoImportExport':
+      case 'endenergieverbrauch':
         return 'assets/icons/charts/area-chart.svg';
       case 'produktionKkwCH':
       case 'produktionKkwFR':
@@ -393,6 +415,9 @@ class KPIUtils{
         return 'assets/icons/charts/donut-chart.svg';
       case 'aktuelleGesamteinsparung':
         return 'assets/icons/charts/plot-chart.svg';
+      case 'produktionPhotovoltaik':
+      case 'produktionWinterproduktion':
+        return 'assets/icons/charts/bar-chart.svg';
       // Gas
       case 'fuellstandNachbarlaender':
         return 'assets/icons/charts/semi-donut-chart.svg';
@@ -420,5 +445,4 @@ class KPIUtils{
         return 'assets/icons/charts/line-chart.svg';
     }
   }
-
 }

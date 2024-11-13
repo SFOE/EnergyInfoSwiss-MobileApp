@@ -394,7 +394,7 @@ class AuthRepository extends AuthRepositoryAbstraction{
   @override
   Future<bool> resendVerificationCode() async {
     try {
-      final result = await Amplify.Auth.resendUserAttributeConfirmationCode(
+      final result = await Amplify.Auth.sendUserAttributeVerificationCode(
         userAttributeKey: AuthUserAttributeKey.email,
       );
       _handleCodeDelivery(result.codeDeliveryDetails);

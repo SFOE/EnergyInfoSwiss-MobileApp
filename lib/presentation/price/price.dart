@@ -32,14 +32,14 @@ class _PriceState extends State<Price> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (_) async {
         if(manager.editorMode){
           manager.discardChanges(context);
         }else{
           Navigation.goToOverview();
         }
-        return false;
       },
       child: Scaffold(
         backgroundColor: ColorPalette.websiteBgColor,

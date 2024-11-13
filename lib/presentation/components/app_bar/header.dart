@@ -45,6 +45,7 @@ class Header extends StatelessWidget with HeaderMixin implements PreferredSizeWi
           elevation: 0,
           primary: true,
           titleSpacing: 0,
+          scrolledUnderElevation: 0.0,
           systemOverlayStyle: const SystemUiOverlayStyle(
             statusBarColor: ColorPalette.white,
             statusBarIconBrightness: Brightness.dark,

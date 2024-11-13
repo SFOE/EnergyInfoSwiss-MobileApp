@@ -12,7 +12,7 @@ class KeyPerformanceIndex extends HiveObject{
   @HiveField(0)
   late String name;
   @HiveField(1)
-  late String value;
+  late String? value;
   @HiveField(2)
   late Trend? trend;
   @HiveField(3)
@@ -51,7 +51,7 @@ class KeyPerformanceIndex extends HiveObject{
     required NavigationRoute route,
   }) => KeyPerformanceIndex(
     name: name,
-    value: json['value'] != null ? json['value'].toString() : "0",
+    value: json['value']?.toString(),
     trend: KPIUtils.getTrend(json['trend'].toString()),
     trendRating: KPIUtils.getTrendRating(json['trendRating'].toString()),
     date: json['date'].toString(),

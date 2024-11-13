@@ -17,8 +17,8 @@ class AuthScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => true,
+    return PopScope(
+      canPop: true,
       child: DismissKeyboard(
         child: Scaffold(
           backgroundColor: ColorPalette.white,

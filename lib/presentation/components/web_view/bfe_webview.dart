@@ -7,7 +7,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 class BfeWebview extends StatefulWidget {
   final String url;
-  const BfeWebview({Key? key, required this.url}) : super(key: key);
+  const BfeWebview({super.key, required this.url});
 
   @override
   State<BfeWebview> createState() => _BfeWebviewState();
